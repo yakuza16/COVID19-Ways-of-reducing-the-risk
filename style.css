@@ -3,3 +3,28 @@
     padding:0;
     box-sizing: border-box;
 }
+
+
+.wrapper {
+    max-width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper .rule {
+    max-width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.rule__image-container {
+    width: 90%;
+    height: 80%;
+    display: flex;
+}
+
+.rule__image {
+    width: 100%;
+}
