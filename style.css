@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #628395;
-    --secondary-color: #865D70;
-    --border-color: #DFD5A5
+    --primary-color: #A07392;
+    --secondary-color: #946C86;
+    --border-color: #BA9CB3
 }
 
 
@@ -42,7 +42,7 @@ body {
     background-color: var(--secondary-color);
     justify-content: center;
     align-content: center;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
     border-top: 4px solid var(--border-color);
     border-right: 4px solid var(--border-color);
     
@@ -59,7 +59,8 @@ body {
     font-weight: bold;
     border-left: 4px solid var(--border-color);
     border-bottom: 4px solid var(--border-color);
-    border-radius: 10px;
+    background-color: var(--secondary-color);
+    border-bottom-left-radius: 10%;
     padding: 0 0 6px 6px;
     font-size: 23px;
     letter-spacing: 1.2px;
@@ -76,7 +77,9 @@ body {
 }
 
 .footer div {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: left;
     width: 100%;
     font-size: 10px;
    
@@ -85,4 +88,5 @@ body {
 .footer div a {
     text-decoration: none;
     color: black;
+    
 }
