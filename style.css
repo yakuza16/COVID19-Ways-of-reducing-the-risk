@@ -33,7 +33,6 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     margin: 0 auto;
-   
 }
 
 .rule__image-container {
@@ -52,6 +51,7 @@ body {
     padding: 10px 0 10px 0;
     max-width: 85%;
 }
+
 
 .rule__text {
     text-align: center;
@@ -82,11 +82,55 @@ body {
     text-align: left;
     width: 100%;
     font-size: 10px;
-   
 }
 
 .footer div a {
     text-decoration: none;
     color: black;
+}
+
+@media (min-width:768px){
+    .rule__text {
+        font-size: 33px;
+    }
+
+    .footer div {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:1024px){
+    .rule__text {
+        font-size: 48px;
+    }
+
+    .footer div {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:1400px){
+    body {
+        height: 100vh;
+    }
+
+    .wrapper {
+        height: 90%;
+        max-width: 100vw;
+        display: grid;
+    }
+
+    .wrapper .rule {
+        width: 25%;
+        height: 15vh;
+    }
     
+    .rule__text {
+        font-size: 20px;
+    }
+
+    .footer div {
+        font-size: 10px;
+    }
+
 }
