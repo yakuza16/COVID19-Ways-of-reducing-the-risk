@@ -17,11 +17,11 @@ html {
 
 body {
     background-color: var(--primary-color);
+    overflow: hidden;
 }
 
 .wrapper {
     max-width: 100vw;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
