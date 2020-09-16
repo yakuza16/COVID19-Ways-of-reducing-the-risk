@@ -29,24 +29,28 @@ body {
 
 .wrapper .rule {
     width: 85%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 0 auto;
+    margin: 50px auto;
+    border-top-right-radius: 10px;
+    border-top: 4px solid var(--border-color);
+    border-right: 4px solid var(--border-color);
+    border-left: 4px solid var(--border-color);
+    border-bottom: 4px solid var(--border-color);
+    background-color: var(--secondary-color);
+    border-bottom-left-radius: 8%;
+
+    transition: background-color .4s ease-in;
+
 }
 
 .rule__image-container {
-    height: 55%;
+    height: 30%;
     display: flex;
     background-color: var(--secondary-color);
     justify-content: center;
     align-content: center;
-    border-top-right-radius: 10px;
-    border-top: 4px solid var(--border-color);
-    border-right: 4px solid var(--border-color);
-    transition: background-color .4s ease-in;
-
 }
 
 .rule__image {
@@ -59,14 +63,9 @@ body {
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
-    border-left: 4px solid var(--border-color);
-    border-bottom: 4px solid var(--border-color);
-    background-color: var(--secondary-color);
-    border-bottom-left-radius: 10%;
     padding: 0 0 6px 6px;
     font-size: 23px;
     letter-spacing: 1.2px;
-    transition: background-color .4s ease-in;
 }
 
 .footer {
@@ -76,15 +75,32 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 8px;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
 }
 
-.footer div {
-    display: flex;
-    justify-content: center;
-    text-align: left;
+.footer .assets-info {
     width: 100%;
-    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    font-size: 8px;
+}
+
+.footer__statistics {
+    font-size: 20px;
+    padding: 5px 20px;
+    margin: 7px 0;
+    font-weight: bold;
+    border-radius: 5%;
+    border: 2px solid var(--primary-color);
+    letter-spacing: 2px;
+    transition: background-color .4s ease-in;
+}
+
+.footer .assets-info div {
+    width: 100%;
+    text-align: left;
+    margin-left: 15px;
 }
 
 .footer div a {
@@ -127,11 +143,10 @@ body {
     }
 
     .wrapper .rule {
-        height: 25vh;
-        align-self: center;
+        height: 20vh;
     }
 
-    .rule:hover .rule__image-container,.rule:hover .rule__text    {
+    .rule:hover {
         background-color: var(--border-color);
     }
 
@@ -147,16 +162,28 @@ body {
         grid-column: 2/4;
     }
     
+    .rule__image-container {
+        height: 40%;
+    }
     
     .rule__text {
         height: 60%;
-        font-size: 23px;
+        font-size: 21px;
         padding: 15px;
        
     }
 
     .footer div {
         margin-top: 7px;
-        font-size: 10px;
+        font-size: 8px;
+    }
+
+    .footer__statistics {
+        font-size: 23px;
+        padding: 5px 22px;
+    }
+
+    .footer__statistics:hover {
+       background-color: var(--border-color);
     }
 }
