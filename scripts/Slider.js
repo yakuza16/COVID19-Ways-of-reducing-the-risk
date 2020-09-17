@@ -3,7 +3,7 @@ import { Common } from './Common.js';
 const sliderImageSelector = '[data-image-slider]';
 const previousButtonSelector = '[data-previous-button]';
 const nextButtonSelector = '[data-next-button]';
-const imagesToSlide = ['/images/corona-4916954_960_720.jpeg','/images/stayhome.jpeg', '/images/corona-virus-5251013_960_720.jpeg', '/images/quarantine.jpeg', ];
+const imagesToSlide = ['../images/corona-4916954_960_720.jpeg','../images/stayhome.jpeg', '../images/corona-virus-5251013_960_720.jpeg', '../images/quarantine.jpeg'];
 let index = 0;
 
 class Slider extends Common{
