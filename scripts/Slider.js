@@ -9,7 +9,6 @@ let index = 0;
 class Slider extends Common{
     constructor(){
         super(sliderImageSelector);
-        this.element.src = imagesToSlide[index]
         const nextSlideButton = super.grabElement(nextButtonSelector);
         const previousSlideButton = super.grabElement(previousButtonSelector);
         nextSlideButton.addEventListener('click',()=>this.nextSlide());
@@ -22,7 +21,7 @@ class Slider extends Common{
         if(index > imagesToSlide.length-1){
             index = 0;
         };
-        this.element.src = imagesToSlide[index];
+        this.element.style.backgroundImage = `url(${imagesToSlide[index]})`;
     }
 
     previousSlide(){
@@ -30,7 +29,7 @@ class Slider extends Common{
         if(index < 0){
             index = imagesToSlide.length-1;
         };
-        this.element.src = imagesToSlide[index];
+        this.element.style.backgroundImage = `url(${imagesToSlide[index]})`;
     }
 
 }

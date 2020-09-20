@@ -107,7 +107,7 @@ body {
 
 @media (min-width:1024px){
     .rule__text {
-        font-size: 48px;
+        font-size: 35px;
     }
 
     .footer div {
@@ -122,10 +122,9 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto auto auto;
-    }
-
-    .wrapper .rule {
-        height: 20vh;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
     }
 
     .rule:hover {

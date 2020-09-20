@@ -1,36 +1,54 @@
+@import './style.css';
+
 .slider {
     width: 100vw;
     height: 40vh;
-    position: relative;
 }
 
 .slider__image-container {
   margin: 0 auto;
   width: 100%;
-  height: 80%;
-}
-
-.slider__image {
-width: 100%;
-height: 100%;
+  height: 100%;
+  background-image: url('/images/corona-4916954_960_720.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
 }
 
 .slider .button {
+    display: block;
     position: absolute;
     width: 50px;
     height: 20px;
+    border: none;
+    background-color: transparent;
+
+}
+
+.slider .button:focus {
+   outline: none;
 }
 
 .slider .button--next {
-    top: 30%;
+    top: 50%;
     right:0;
     transform: translate(-50%, -50%);
 }
 
 .slider .button--previous {
-    top: 30%;
-    left: 0;
+    top: 50%;
+    left: 0%;
     transform: translate(50%, -50%);
+}
+
+.slider .button--previous img {
+    transform: rotate(-180deg);
+}
+
+.button img {
+    width: 100%;
+    height: 100%;
 }
 
 @media(orientation: landscape){
@@ -40,61 +58,18 @@ height: 100%;
         height: 50vh;
         position: relative;
     }
-
-    .slider__image-container {
-        margin: 0 auto;
-        width: 60%;
-        height:100%;
-      }
-
-      .slider .button--next {
-        right:20%;
-      
-    }
-    
-    .slider .button--previous {
-        left: 20%;
-       
-    }
 }
 
 @media(min-width: 768px){
     .slider .button {
-        width: 90px;
-        height: 30px;
+        width: 60px;
     }
 }
 
 @media(min-width: 1024px){
     .slider .button {
-        width: 130px;
+        width: 100px;
         height: 40px;
     }
 }
 
-@media(min-width:1400px){
-
-    .slider {
-        width: 100vw;
-        height: 45vh;
-        position: relative;
-    }
-
-    .slider__image-container {
-        margin: 0 auto;
-        width: 45%;
-        height:100%;
-      }
-
-
-    .slider .button--next {
-        right:25%;
-      
-    }
-    
-    .slider .button--previous {
-        left: 25%;
-       
-    }
-    
-}
