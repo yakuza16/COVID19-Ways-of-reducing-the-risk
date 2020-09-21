@@ -14,6 +14,5 @@ export class Common{
         }
         return element;
     }
-
 }
 
