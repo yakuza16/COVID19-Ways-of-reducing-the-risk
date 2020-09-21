@@ -1,0 +1,78 @@
+@import url('./style.css');
+/* font-family: 'News Cycle', sans-serif; */
+
+
+.statistics {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+font-family: 'News Cycle','Arial', sans-serif;
+background-color: var(--secondary-color);
+border-bottom-right-radius: 20%;
+border-bottom-left-radius: 20%;
+border-bottom: 3px solid var(--border-color);
+}
+
+.statistics__header {
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.statistics__title {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+.statistics__date, .statistics__cases, .statistics__deaths, .statistics__recovered {
+font-size: 22px;
+margin: 10px 0 10px;
+}
+
+.statistics__date > *, .statistics__cases > *, .statistics__deaths > *, .statistics__recovered >* {
+    font-size: 25px;
+    font-size: bold;
+}
+
+.statistics__recovered {
+    margin-bottom: 40px;
+}
+
+@media (min-width:768px){
+    .statistics__header {
+        font-size: 70px;
+    }
+
+    .statistics__title {
+        font-size: 50px;
+    }
+
+    .statistics__date, .statistics__cases, .statistics__deaths, .statistics__recovered {
+        font-size: 32px;
+        }
+}
+
+@media (min-width:1400px){
+    .statistics__header {
+        margin-top: 18px;
+        font-size: 78px;
+    }
+
+    .statistics__title {
+        font-size: 55px;
+    }
+
+    .statistics__date, .statistics__cases, .statistics__deaths, .statistics__recovered {
+        font-size: 35px;
+    }
+
+    .statistics__date > *, .statistics__cases > *, .statistics__deaths > *, .statistics__recovered >* {
+        font-size: 38px;
+        font-size: bold;
+    }
+
+
+
+
+
+}

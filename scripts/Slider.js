@@ -62,7 +62,7 @@ class Slider extends Common{
     }
 }
 
-window.addEventListener('DOMContentLoaded', ()=>{
+export const slide = () =>window.addEventListener('DOMContentLoaded', ()=>{
     const slider = new Slider();
 })
 

@@ -48,4 +48,9 @@ class Statistics extends Common{
     }
 }
 
-export const statistics = new Statistics();
+
+
+
+export const stats = () =>window.addEventListener('DOMContentLoaded', ()=>{
+    const statistics = new Statistics();
+})
