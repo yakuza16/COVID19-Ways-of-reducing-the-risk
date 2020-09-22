@@ -7,6 +7,7 @@ const imagesToSlide = ['./images/corona-4916954_960_720.jpeg','./images/stayhome
 let index = 0;
 let intervalIndex = null;
 let canAutomaticallyChange = true;
+const secondsForNextSlide = 5000;
 
 
 class Slider extends Common{
@@ -26,7 +27,7 @@ class Slider extends Common{
        this.nextSlide();
       
        if(!canAutomaticallyChange){
-        setTimeout(()=>this.autoSlide(),5000)
+        setTimeout(()=>this.autoSlide(),secondsForNextSlide)
        }
     }
 
@@ -36,7 +37,7 @@ class Slider extends Common{
         this.previousSlide();
 
         if(!canAutomaticallyChange){
-        setTimeout(()=>this.autoSlide(),4000)
+        setTimeout(()=>this.autoSlide(),secondsForNextSlide)
         }
     }
 
@@ -58,7 +59,7 @@ class Slider extends Common{
 
     autoSlide(){
         clearInterval(intervalIndex);
-        intervalIndex = setInterval(()=>this.nextSlide(),4000);
+        intervalIndex = setInterval(()=>this.nextSlide(),secondsForNextSlide);
     }
 }
 
