@@ -5,9 +5,10 @@ const dateSelector = '[data-date]';
 const allCasesSelector = '[data-all-cases]';
 const deathSelector = '[data-death]';
 const recoverySelector = '[data-recovered]';
-const regex = /,/gi;
+// const regex = /,/gi;
 
-const API = 'https://corona-virus-stats.herokuapp.com/api/v1/cases/general-stats';
+// const API = 'https://corona-virus-stats.herokuapp.com/api/v1/cases/general-stats';
+const API = 'https://api.covid19api.com/summary'
 
 
 class Statistics extends Common{
@@ -39,10 +40,10 @@ class Statistics extends Common{
             return response.json();
         })
         .then(data=>{
-        const {total_cases,death_cases,recovery_cases} = data.data;
-        this.allCasesElement.textContent = total_cases.replace(regex,' ');
-        this.deathCasesElement.textContent = death_cases.replace(regex,' ');
-        this.recoveryCasesElement.textContent = recovery_cases.replace(regex,' ');
+        const {TotalConfirmed,TotalDeaths,TotalRecovered} = data.Global;
+        this.allCasesElement.textContent = TotalConfirmed;
+        this.deathCasesElement.textContent = TotalDeaths;
+        this.recoveryCasesElement.textContent = TotalRecovered;
         })
         .catch(()=>console.log(`Can't access ${API} response. Blocked by browser`))
     }
