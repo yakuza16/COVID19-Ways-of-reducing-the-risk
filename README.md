@@ -4,15 +4,7 @@
 
 ## Website made in:
 
-**HTML**  ![](https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/96-html5-48.png)
-
-**CSS**   ![](https://cdn3.iconfinder.com/data/icons/social-media-logos-flat-colorful-1/2048/5351_-_CSS3-64.png)
-
-**JavaScript**  ![](https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-64.png)
-
-**SVG Icons**
-
-![](https://cdn3.iconfinder.com/data/icons/cad-database-presentation-spreadsheet-vector-fil-2/512/28-48.png)
+**HTML**  ![](https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/96-html5-48.png)   **CSS**   ![](https://cdn3.iconfinder.com/data/icons/social-media-logos-flat-colorful-1/2048/5351_-_CSS3-64.png)   **JavaScript**  ![](https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-64.png)   **SVG Icons**   ![](https://cdn3.iconfinder.com/data/icons/cad-database-presentation-spreadsheet-vector-fil-2/512/28-48.png)
 
 **Responsive web design**
 
