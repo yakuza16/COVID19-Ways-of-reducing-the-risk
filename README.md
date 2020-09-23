@@ -1,4 +1,4 @@
-# Coronavirus -methods of reducing the risk
+# [Coronavirus -methods of reducing the risk](https://yakuza16.github.io/COVID19-Ways-of-reducing-the-risk/ "Coronavirus -methods of reducing the risk")
 
 ![](https://cdn3.iconfinder.com/data/icons/virus-transmission-outline-color-pack/64/28-Virus-256.png)
 
