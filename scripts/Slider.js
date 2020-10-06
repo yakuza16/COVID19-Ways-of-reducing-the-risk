@@ -3,7 +3,7 @@ import { Common } from './Common.js';
 const sliderImageSelector = '[data-image-slider]';
 const previousButtonSelector = '[data-previous-button]';
 const nextButtonSelector = '[data-next-button]';
-const imagesToSlide = ['./images/wirus1.jpeg','./images/stayhome.jpeg', './images/wirus2.jpeg', './images/quarantine.jpeg'];
+const imagesToSlide = ['./images/wirus1.jpg','./images/stayhome.jpg', './images/wirus2.jpg', './images/quarantine.jpg'];
 let index = 0;
 let intervalIndex = null;
 let canAutomaticallyChange = true;
